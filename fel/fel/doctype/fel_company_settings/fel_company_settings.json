@@ -10,7 +10,18 @@
   "fel_provider",
   "enabled",
   "environment",
-  "establishment_code"
+  "establishment_code",
+  "credenciales_api",
+  "api_username",
+  "api_password",
+  "iva_affiliation",
+  "establishment_name",
+  "establishment_address",
+  "establishment_postal_code",
+  "establishment_district",
+  "establishment_state",
+  "phrase_type",
+  "phrase_scenario"
  ],
  "fields": [
   {
@@ -49,12 +60,81 @@
    "fieldname": "establishment_code",
    "fieldtype": "Data",
    "label": "C\u00f3digo de establecimiento"
+  },
+  {
+   "fieldname": "credenciales_api",
+   "fieldtype": "Data",
+   "label": "Credenciales API"
+  },
+  {
+   "fieldname": "api_username",
+   "fieldtype": "Data",
+   "label": "api_username",
+   "reqd": 1
+  },
+  {
+   "fieldname": "api_password",
+   "fieldtype": "Password",
+   "label": "api_password",
+   "reqd": 1
+  },
+  {
+   "default": "GEN",
+   "fieldname": "iva_affiliation",
+   "fieldtype": "Select",
+   "label": "Afiliaci\u00f3n IVA",
+   "options": "GEN\nPEQ\nPEE\nEXE\nPRI\nPEC",
+   "reqd": 1
+  },
+  {
+   "fieldname": "establishment_name",
+   "fieldtype": "Data",
+   "label": "Nombre establecimiento",
+   "reqd": 1
+  },
+  {
+   "fieldname": "establishment_address",
+   "fieldtype": "Small Text",
+   "label": "Direcci\u00f3n establecimiento",
+   "reqd": 1
+  },
+  {
+   "fieldname": "establishment_postal_code",
+   "fieldtype": "Data",
+   "label": "C\u00f3digo postal",
+   "reqd": 1
+  },
+  {
+   "fieldname": "establishment_district",
+   "fieldtype": "Data",
+   "label": "Municipio",
+   "reqd": 1
+  },
+  {
+   "fieldname": "establishment_state",
+   "fieldtype": "Data",
+   "label": "Departamento",
+   "reqd": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "phrase_type",
+   "fieldtype": "Int",
+   "label": "Tipo de frase",
+   "reqd": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "phrase_scenario",
+   "fieldtype": "Int",
+   "label": "Escenario de frase",
+   "reqd": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-08-18 14:48:53.552736",
+ "modified": "2026-09-03 10:01:55.000000",
  "modified_by": "Administrator",
  "module": "Fel",
  "name": "FEL Company Settings",
