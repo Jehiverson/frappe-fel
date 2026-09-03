@@ -25,7 +25,7 @@ doc_events = {
 # 	{
 # 		"name": "fel",
 # 		"logo": "/assets/fel/logo.png",
-# 		"title": "Kingo Fel",
+# 		"title": "Fel",
 # 		"route": "/fel",
 # 		"has_permission": "fel.api.permission.has_app_permission"
 # 	}
