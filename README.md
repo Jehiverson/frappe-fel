@@ -9,7 +9,7 @@ You can install this app using the [bench](https://github.com/frappe/bench) CLI:
 ```bash
 cd $PATH_TO_YOUR_BENCH
 bench get-app $URL_OF_THIS_REPO --branch fel
-bench install-app kingo_fel
+bench install-app fel
 ```
 
 ### Contributing
@@ -17,7 +17,7 @@ bench install-app kingo_fel
 This app uses `pre-commit` for code formatting and linting. Please [install pre-commit](https://pre-commit.com/#installation) and enable it for this repository:
 
 ```bash
-cd apps/kingo_fel
+cd apps/fel
 pre-commit install
 ```
 

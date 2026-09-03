@@ -23,11 +23,11 @@ doc_events = {
 # Each item in the list will be shown as an app in the apps page
 # add_to_apps_screen = [
 # 	{
-# 		"name": "kingo_fel",
-# 		"logo": "/assets/kingo_fel/logo.png",
+# 		"name": "fel",
+# 		"logo": "/assets/fel/logo.png",
 # 		"title": "Kingo Fel",
-# 		"route": "/kingo_fel",
-# 		"has_permission": "kingo_fel.api.permission.has_app_permission"
+# 		"route": "/fel",
+# 		"has_permission": "fel.api.permission.has_app_permission"
 # 	}
 # ]
 
@@ -35,15 +35,15 @@ doc_events = {
 # ------------------
 
 # include js, css files in header of desk.html
-# app_include_css = "/assets/kingo_fel/css/kingo_fel.css"
-# app_include_js = "/assets/kingo_fel/js/kingo_fel.js"
+# app_include_css = "/assets/fel/css/fel.css"
+# app_include_js = "/assets/fel/js/fel.js"
 
 # include js, css files in header of web template
-# web_include_css = "/assets/kingo_fel/css/kingo_fel.css"
-# web_include_js = "/assets/kingo_fel/js/kingo_fel.js"
+# web_include_css = "/assets/fel/css/fel.css"
+# web_include_js = "/assets/fel/js/fel.js"
 
 # include custom scss in every website theme (without file extension ".scss")
-# website_theme_scss = "kingo_fel/public/scss/website"
+# website_theme_scss = "fel/public/scss/website"
 
 # include js, css files in header of web form
 # webform_include_js = {"doctype": "public/js/doctype.js"}
@@ -61,7 +61,7 @@ doc_events = {
 # Svg Icons
 # ------------------
 # include app icons in desk
-# app_include_icons = "kingo_fel/public/icons.svg"
+# app_include_icons = "fel/public/icons.svg"
 
 # Home Pages
 # ----------
@@ -88,49 +88,49 @@ doc_events = {
 
 # add methods and filters to jinja environment
 # jinja = {
-# 	"methods": "kingo_fel.utils.jinja_methods",
-# 	"filters": "kingo_fel.utils.jinja_filters"
+# 	"methods": "fel.utils.jinja_methods",
+# 	"filters": "fel.utils.jinja_filters"
 # }
 
 # Installation
 # ------------
 
-# before_install = "kingo_fel.install.before_install"
-# after_install = "kingo_fel.install.after_install"
+# before_install = "fel.install.before_install"
+# after_install = "fel.install.after_install"
 
 # Uninstallation
 # ------------
 
-# before_uninstall = "kingo_fel.uninstall.before_uninstall"
-# after_uninstall = "kingo_fel.uninstall.after_uninstall"
+# before_uninstall = "fel.uninstall.before_uninstall"
+# after_uninstall = "fel.uninstall.after_uninstall"
 
 # Integration Setup
 # ------------------
 # To set up dependencies/integrations with other apps
 # Name of the app being installed is passed as an argument
 
-# before_app_install = "kingo_fel.utils.before_app_install"
-# after_app_install = "kingo_fel.utils.after_app_install"
+# before_app_install = "fel.utils.before_app_install"
+# after_app_install = "fel.utils.after_app_install"
 
 # Integration Cleanup
 # -------------------
 # To clean up dependencies/integrations with other apps
 # Name of the app being uninstalled is passed as an argument
 
-# before_app_uninstall = "kingo_fel.utils.before_app_uninstall"
-# after_app_uninstall = "kingo_fel.utils.after_app_uninstall"
+# before_app_uninstall = "fel.utils.before_app_uninstall"
+# after_app_uninstall = "fel.utils.after_app_uninstall"
 
 # Build
 # ------------------
 # To hook into the build process
 
-# after_build = "kingo_fel.build.after_build"
+# after_build = "fel.build.after_build"
 
 # Desk Notifications
 # ------------------
 # See frappe.core.notifications.get_notification_config
 
-# notification_config = "kingo_fel.notifications.get_notification_config"
+# notification_config = "fel.notifications.get_notification_config"
 
 # Permissions
 # -----------
@@ -161,47 +161,47 @@ doc_events = {
 
 # scheduler_events = {
 # 	"all": [
-# 		"kingo_fel.tasks.all"
+# 		"fel.tasks.all"
 # 	],
 # 	"daily": [
-# 		"kingo_fel.tasks.daily"
+# 		"fel.tasks.daily"
 # 	],
 # 	"hourly": [
-# 		"kingo_fel.tasks.hourly"
+# 		"fel.tasks.hourly"
 # 	],
 # 	"weekly": [
-# 		"kingo_fel.tasks.weekly"
+# 		"fel.tasks.weekly"
 # 	],
 # 	"monthly": [
-# 		"kingo_fel.tasks.monthly"
+# 		"fel.tasks.monthly"
 # 	],
 # }
 
 # Testing
 # -------
 
-# before_tests = "kingo_fel.install.before_tests"
+# before_tests = "fel.install.before_tests"
 
 # Extend DocType Class
 # ------------------------------
 #
 # Specify custom mixins to extend the standard doctype controller.
 # extend_doctype_class = {
-# 	"Task": "kingo_fel.custom.task.CustomTaskMixin"
+# 	"Task": "fel.custom.task.CustomTaskMixin"
 # }
 
 # Overriding Methods
 # ------------------------------
 #
 # override_whitelisted_methods = {
-# 	"frappe.desk.doctype.event.event.get_events": "kingo_fel.event.get_events"
+# 	"frappe.desk.doctype.event.event.get_events": "fel.event.get_events"
 # }
 #
 # each overriding function accepts a `data` argument;
 # generated from the base implementation of the doctype dashboard,
 # along with any modifications made in other Frappe apps
 # override_doctype_dashboards = {
-# 	"Task": "kingo_fel.task.get_dashboard_data"
+# 	"Task": "fel.task.get_dashboard_data"
 # }
 
 # exempt linked doctypes from being automatically cancelled
@@ -215,13 +215,13 @@ doc_events = {
 
 # Request Events
 # ----------------
-# before_request = ["kingo_fel.utils.before_request"]
-# after_request = ["kingo_fel.utils.after_request"]
+# before_request = ["fel.utils.before_request"]
+# after_request = ["fel.utils.after_request"]
 
 # Job Events
 # ----------
-# before_job = ["kingo_fel.utils.before_job"]
-# after_job = ["kingo_fel.utils.after_job"]
+# before_job = ["fel.utils.before_job"]
+# after_job = ["fel.utils.after_job"]
 
 # User Data Protection
 # --------------------
@@ -251,7 +251,7 @@ doc_events = {
 # --------------------------------
 
 # auth_hooks = [
-# 	"kingo_fel.auth.validate"
+# 	"fel.auth.validate"
 # ]
 
 # Automatically update python controller files with type annotations for this app.

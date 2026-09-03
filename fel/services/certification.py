@@ -8,7 +8,7 @@ import frappe
 from frappe.utils import get_url_to_form
 from frappe.utils.file_manager import save_file
 
-from kingo_fel.providers.registry import get_provider
+from fel.providers.registry import get_provider
 
 
 def get_company_fel_settings(company: str):

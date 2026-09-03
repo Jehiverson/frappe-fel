@@ -1,6 +1,6 @@
 import frappe
 
-from kingo_fel.providers.digifact import DigifactProvider
+from fel.providers.digifact import DigifactProvider
 
 
 PROVIDER_CLASSES = {

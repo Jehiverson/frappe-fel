@@ -6,7 +6,7 @@ function emit_fel_invoice(frm) {
         ),
         () => {
             frappe.call({
-                method: "kingo_fel.api.fel.prepare_fel_document",
+                method: "fel.api.fel.prepare_fel_document",
                 args: {
                     sales_invoice_name: frm.doc.name,
                 },
@@ -20,7 +20,7 @@ function emit_fel_invoice(frm) {
                     }
 
                     frappe.call({
-                        method: "kingo_fel.api.fel.certify_fel_document",
+                        method: "fel.api.fel.certify_fel_document",
                         args: {
                             fel_document_name: prepared.fel_document_id,
                         },

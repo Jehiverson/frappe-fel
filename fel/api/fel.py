@@ -1,13 +1,13 @@
 import frappe
 
-from kingo_fel.services.certification import create_pending_fel_document
-from kingo_fel.providers.registry import get_provider
-from kingo_fel.services.certification import get_company_fel_settings
-from kingo_fel.services.nuc_json import build_fact_nuc_json
-from kingo_fel.services.certification import (
+from fel.services.certification import create_pending_fel_document
+from fel.providers.registry import get_provider
+from fel.services.certification import get_company_fel_settings
+from fel.services.nuc_json import build_fact_nuc_json
+from fel.services.certification import (
     certify_fel_document as certify_fel_document_service,
 )
-from kingo_fel.services.nuc_xml import build_fact_nuc_xml
+from fel.services.nuc_xml import build_fact_nuc_xml
 
 @frappe.whitelist()
 def prepare_fel_document(sales_invoice_name: str):

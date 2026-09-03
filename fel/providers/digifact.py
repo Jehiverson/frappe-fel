@@ -2,7 +2,7 @@ import re
 import frappe
 import requests
 
-from kingo_fel.providers.base import CertificationResult, FelProvider
+from fel.providers.base import CertificationResult, FelProvider
 
 
 class DigifactProvider(FelProvider):
@@ -105,7 +105,7 @@ class DigifactProvider(FelProvider):
         }
 
     def certify(self, fel_document) -> CertificationResult:
-        from kingo_fel.services.nuc_json import build_fact_nuc_json
+        from fel.services.nuc_json import build_fact_nuc_json
 
         invoice = frappe.get_doc("Sales Invoice", fel_document.sales_invoice)
         nuc = build_fact_nuc_json(invoice, self.company_settings)

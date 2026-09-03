@@ -1,6 +1,6 @@
 from xml.etree import ElementTree as ET
 
-from kingo_fel.services.nuc_json import build_fact_nuc_json
+from fel.services.nuc_json import build_fact_nuc_json
 
 
 def _text(parent, tag, value):
