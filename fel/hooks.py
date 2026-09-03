@@ -11,7 +11,7 @@ doctype_js = {
 
 doc_events = {
     "Sales Invoice": {
-        "before_submit": "kingo_fel.events.sales_invoice.block_direct_submission",
+        "before_submit": "fel.events.sales_invoice.block_direct_submission",
     },
 }
 
