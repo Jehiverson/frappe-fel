@@ -1,8 +1,8 @@
-app_name = "kingo_fel"
-app_title = "Kingo Fel"
-app_publisher = "Jehiverson"
+app_name = "fel"
+app_title = "Fel"
+app_publisher = "Jehiverson Rodriguez"
 app_description = "Integration with FEL"
-app_email = "Jehiverson.rodriguez@kingonet.com"
+app_email = "Jehivis@gmail.com"
 app_license = "mit"
 
 doctype_js = {
