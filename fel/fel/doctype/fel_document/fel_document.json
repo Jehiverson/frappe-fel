@@ -1,0 +1,135 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "autoname": "hash",
+ "creation": "2026-08-18 16:14:03.136095",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "company",
+  "sales_invoice",
+  "dte_type",
+  "fel_provider",
+  "fel_status",
+  "certification_uuid",
+  "fel_series",
+  "fel_number",
+  "certified_at",
+  "certified_xml",
+  "certified_pdf",
+  "error_message",
+  "provider_response"
+ ],
+ "fields": [
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Compa\u00f1\u00eda",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "sales_invoice",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Factura de Venta",
+   "options": "Sales Invoice",
+   "reqd": 1
+  },
+  {
+   "default": "FACT",
+   "fieldname": "dte_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Tipo de DTE",
+   "options": "FACT\nNCRED\nNDEB\nANULACION",
+   "reqd": 1
+  },
+  {
+   "fieldname": "fel_provider",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Certificador FEL",
+   "options": "FEL Provider",
+   "reqd": 1
+  },
+  {
+   "default": "Pendiente",
+   "fieldname": "fel_status",
+   "fieldtype": "Select",
+   "label": "Estado FEL",
+   "options": "Pendiente\nEnviando\nCertificado\nRechazado\nAnulado",
+   "reqd": 1
+  },
+  {
+   "fieldname": "certification_uuid",
+   "fieldtype": "Data",
+   "label": "UUID de certificaci\u00f3n"
+  },
+  {
+   "fieldname": "fel_series",
+   "fieldtype": "Data",
+   "label": "Serie FEL"
+  },
+  {
+   "fieldname": "fel_number",
+   "fieldtype": "Data",
+   "label": "N\u00famero FEL"
+  },
+  {
+   "fieldname": "certified_at",
+   "fieldtype": "Datetime",
+   "label": "Fecha de certificaci\u00f3n"
+  },
+  {
+   "fieldname": "certified_xml",
+   "fieldtype": "Attach",
+   "label": "XML certificado"
+  },
+  {
+   "fieldname": "certified_pdf",
+   "fieldtype": "Attach",
+   "label": "PDF certificado"
+  },
+  {
+   "fieldname": "error_message",
+   "fieldtype": "Long Text",
+   "label": "Mensaje de error"
+  },
+  {
+   "fieldname": "provider_response",
+   "fieldtype": "Long Text",
+   "label": "Respuesta del certificador"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-08-18 16:47:49.799127",
+ "modified_by": "Administrator",
+ "module": "Kingo Fel",
+ "name": "FEL Document",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "sales_invoice"
+}
